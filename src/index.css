@@ -1,0 +1,15 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #242424;
+  color: white;
+  margin: 8px;
+}
+
+input, select, button {
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid #777;
+}
