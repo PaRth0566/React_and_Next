@@ -51,8 +51,14 @@ function DisplayResult({ student }) {
 
     const subjects = matchedExams.map((exam) => {
       const total = exam.icaMarks + exam.eseMarks;
-      const passed = total >= 40;
+
+      const passed =
+        exam.icaMarks >= 8 &&
+        exam.eseMarks >= 32 &&
+        total >= 40;
+
       const { grade, point } = getGrade(total);
+
       return {
         ...exam,
         total,
